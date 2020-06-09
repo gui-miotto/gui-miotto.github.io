@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 7em;
+  height: calc(100vh - 14em);
+  color: white;
+  scroll-snap-align: start;
+}
+
+section:first-of-type {
+  background-color: #aaa;
+}
+
+section:nth-of-type(even) {
+  background: #6eac89;
+}
+
+section:nth-of-type(odd) {
+  background: #388391;
+}
+
+section h3 {
+  font-size: 2em;
+}
+/*# sourceMappingURL=main.css.map */
