@@ -1,0 +1,34 @@
+$primaryColor: rgb(110, 172, 137);
+$secondaryColor: rgb(56, 131, 145);
+$anotherColor : #aaa;
+
+body {
+    margin: 0;
+    
+    
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+    scroll-behavior: smooth;
+    //overflow-y: scroll;
+}
+
+section {
+    padding: 7em;
+    height: calc(100vh - 14em);
+    color: white;
+    scroll-snap-align: start;
+
+    &:first-of-type{
+        background-color: $anotherColor;
+    }
+    &:nth-of-type(even){
+        background: $primaryColor;
+    }
+    &:nth-of-type(odd){
+        background: $secondaryColor;
+    }
+
+    h3{
+        font-size: 2em;
+    }
+}
