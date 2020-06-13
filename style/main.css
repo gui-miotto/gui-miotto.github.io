@@ -33,7 +33,7 @@ body {
 
 #main_container section {
   padding: 7em;
-  height: 100vh;
+  height: calc(100vh - 14em);
   color: white;
   scroll-snap-align: start;
 }
@@ -44,7 +44,7 @@ body {
   background: #388391;
 }
 #main_container section:first-of-type {
-  background-color: #aaa;
+  background-color: #388391;
 }
 #main_container section h3 {
   font-size: 2em;
@@ -57,16 +57,20 @@ body {
   justify-content: center;
 }
 
+#contact_parts {
+  position: absolute;
+}
+
 #headshot {
-  max-width: 45%;
-  max-height: 45%;
+  max-width: 30%;
+  max-height: 30%;
 }
 
 #kurzgesagt {
   margin: 0 auto;
   /* center element horizontally */
   text-align: justify;
-  width: 40%;
+  width: 30%;
   color: white;
   overflow: hidden;
   padding: 1em;
@@ -79,8 +83,15 @@ body {
 }
 
 #social_bar div {
-  max-width: 60px;
+  max-width: 70px;
+  transition: transform 0.2s;
+  /* Animation */
   flex: 1;
+}
+
+#social_bar div :hover {
+  transform: scale(1.2);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 /*# sourceMappingURL=main.css.map */

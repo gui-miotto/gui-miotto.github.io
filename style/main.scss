@@ -22,8 +22,7 @@ body {
  
 #main_container section {
     padding: 7em;
-    //height: calc(100vh - 14em);
-    height: 100vh;
+    height: calc(100vh - 14em);
     color: white;
     scroll-snap-align: start;
 
@@ -34,7 +33,7 @@ body {
         background: colors.$secondary;
     }
     &:first-of-type{
-        background-color: colors.$another;
+        background-color: colors.$secondary;
     }
 
     h3{
@@ -49,8 +48,13 @@ body {
     justify-content: center;
 }
 
+#contact_parts {
+    position: absolute;
+}
+
+
 #headshot{
-    $shink_headshot: 45%;
+    $shink_headshot: 30%;
     max-width: $shink_headshot;
     max-height: $shink_headshot;
 }
@@ -58,7 +62,7 @@ body {
 #kurzgesagt {
     margin: 0 auto; /* center element horizontally */
     text-align: justify;
-    width: 40%;
+    width: 30%;
     color: white;
     overflow: hidden;
     padding: 1em;
@@ -71,6 +75,11 @@ body {
 }
 
 #social_bar div {
-    max-width: 60px; 
+    max-width: 70px; 
+    transition: transform .2s; /* Animation */
     flex: 1;
+}
+
+#social_bar div :hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
