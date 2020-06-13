@@ -18,11 +18,7 @@ body {
     overflow: auto;
     scroll-behavior: smooth;
 
-    scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(3rem);
-    scroll-snap-type: y mandatory;
-
-
+    
     //overflow-y: scroll;
 }
  
