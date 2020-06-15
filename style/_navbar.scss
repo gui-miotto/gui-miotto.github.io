@@ -3,13 +3,16 @@
 $navbar_height: 3em;
 
 #navbar {
-    background-color: colors.$primary;
+    background-color: colors.$c3;
     overflow: hidden;
     height: $navbar_height;
     text-align: center;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 999;
+    display: none;
+
 }
 
 #navbar a {

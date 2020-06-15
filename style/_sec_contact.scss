@@ -1,0 +1,44 @@
+#sec_contact{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact_parts {
+    position: absolute;
+}
+
+
+#headshot{
+    $shink_headshot: 30%;
+    max-width: $shink_headshot;
+    max-height: $shink_headshot;
+}
+
+#kurzgesagt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: larger;
+    margin: 0 auto; /* center element horizontally */
+    text-align: center;
+    width: 30%;
+    overflow: hidden;
+    padding: 1em;
+}
+
+#social_bar {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+#social_bar div {
+    max-width: 70px; 
+    transition: transform .2s; /* Animation */
+    flex: 1;
+}
+
+#social_bar div :hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}

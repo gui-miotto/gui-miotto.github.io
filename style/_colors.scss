@@ -1,3 +1,25 @@
-$primary: rgb(110, 172, 137);
-$secondary: rgb(56, 131, 145);
-$another: #aaa;
+$c1: #f1f3f4;
+$c2: #79bac1;
+$c3: #2a7886;
+$c4: #512b58;
+
+
+
+// $sel: 1;
+
+// @if $sel == 1 {
+//     $c1: #f1f3f4;
+//     $c2: #79bac1;
+//     $c3: #2a7886;
+//     $c4: #512b58;
+// } @else if $sel == 2 {
+//     $c1: #85a392;
+//     $c2: #f5b971;
+//     $c3: #fdd998;
+//     $c4: #ffecc7;
+// } @else {
+//     @error "Unknown color scheme #{sel}."
+// }
+
+
+
