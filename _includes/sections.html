@@ -1,0 +1,9 @@
+
+    {% for section in site.data.sections%}
+        <section id="{{ section.id }}"> 
+            {% assign filename = {{section.id}} | append: ".html" }} %}
+            {% include {{filename}} %}
+        </section>
+    {% endfor %}
+
+    

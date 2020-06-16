@@ -1,29 +1,25 @@
-@use 'colors';
 
-
-#main_container {
+#section_deck {
     
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     //scroll-behavior: smooth;
 }
  
-#main_container section {
+#section_deck section {
     padding: 7em;
     height: calc(100vh - 14em);
-    color: colors.$c1;
+    color: $color1;
     scroll-snap-align: start;
 
     &:nth-of-type(even){
-        background: colors.$c2;
-        display: none;
+        background: $color2;
     }
     &:nth-of-type(odd){
-        background: colors.$c2;
-        display: none;
+        background: $color2;
     }
     &:first-of-type{
-        background-color: colors.$c2;
+        background-color: $color2;
         display: block;
     }
 

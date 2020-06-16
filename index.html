@@ -1,75 +1,21 @@
+---
+
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style/main.css">
-    
+    <title>Guilherme Miotto</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/particles_app.js"></script>
 </head>
 <body>
-    <!-- <script src="script/nav_content.js"></script> -->
-    <nav id="navbar">
-        <a href="#sec_contact">Contact</a>
-        <a href="#sec_about">About</a>
-        <a href="#sec_experience">Experience</a>
-
-    </nav>
-    <!-- <script src="script/nav_content.js"></script> -->
-
-
-    <div id="main_container">
-        <section id="sec_contact">
-            <script src="script/particles.js"></script>
-            <script src="script/app.js"></script>
-            <div id=contact_parts>
-                <h1> GUI MIOTTO </h1>
-                <img id="headshot" src="img/photo/gui_miotto.jpg" alt="Guilherme Miotto"> 
-                <p id="kurzgesagt">A computer scientist based in Germany. Mainly working on artificial intelligence and simulations of complex systems. Uniformity beats perfection! </p>
-                <div id="social_bar">
-                    <div>
-                        <a target="_blank" href="https://github.com/gui-miotto">
-                            <img src="img/icon/icons8-github-60.png" alt="GitHub">
-                        </a>
-                    </div>
-                    <div>
-                        <a target="_blank" href="https://twitter.com/gmiotto">
-                            <img src="img/icon/icons8-twitter-circled-60.png" alt="Twitter"> 
-                        </a>
-                    </div>
-                    <div>
-                        <a target="_blank" href="https://www.linkedin.com/in/gui-miotto/">
-                            <img src="img/icon/icons8-linkedin-circled-60.png" alt="LinkedIn"> 
-                        </a>
-                    </div>
-                    <div>
-                        <a target="_blank" href="mailto:guilherme.miotto@gmail.com">
-                            <img src="img/icon/icons8-circled-envelope-60.png" alt="Email"> 
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="sec_about">
-            <h3>About</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus inventore odit aliquid molestiae perspiciatis aspernatur, labore tempora animi neque, rem iste dignissimos aperiam totam veniam magni vitae cum, minima natus?</p>
-        </section>
-        <section id="sec_experience">
-            <h3>Experience</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus inventore odit aliquid molestiae perspiciatis aspernatur, labore tempora animi neque, rem iste dignissimos aperiam totam veniam magni vitae cum, minima natus?</p>
-        </section>
-        <section>
-            <h3>Subtitle 4</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus inventore odit aliquid molestiae perspiciatis aspernatur, labore tempora animi neque, rem iste dignissimos aperiam totam veniam magni vitae cum, minima natus?</p>
-        </section>
+    {% include navbar.html %}
+    <div id="section_deck">
+        {% include sections.html %}
+        
     </div>
-
-
-
-</body>
-<footer>
-    <!-- <p>Author: Hege Refsnes</p> -->
-    <!-- <p><a href="mailto:hege@example.com">hege@example.com</a></p> -->
-    All icons by <a target="_blank" href="https://icons8.com">Icons8</a>. Particles animation by <a target="_blank" href="https://github.com/VincentGarreau/particles.js">Vincent Garreau</a>
-  </footer> 
 </html>

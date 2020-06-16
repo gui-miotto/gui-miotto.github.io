@@ -1,9 +1,7 @@
-@use "colors";
-
 $navbar_height: 3em;
 
 #navbar {
-    background-color: colors.$c3;
+    background-color: $color3;
     overflow: hidden;
     height: $navbar_height;
     text-align: center;
@@ -11,14 +9,12 @@ $navbar_height: 3em;
     top: 0;
     width: 100%;
     z-index: 999;
-    display: none;
-
 }
 
 #navbar a {
     //float: center;
     display: inline-block;
-    color: #f2f2f2;
+    color: $color1;
     text-align: center;
     padding: 14px;
     text-decoration: none;
