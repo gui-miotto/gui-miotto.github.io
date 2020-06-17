@@ -7,19 +7,27 @@
 }
  
 #section_deck section {
-    padding: 7em;
-    height: calc(100vh - 14em);
-    color: $color1;
+    padding-top: $navbar_height;
+    height: calc(100vh - #{$navbar_height});
+    //height: calc(100vh - #{2 * $pad});
+    color: $color4;
     scroll-snap-align: start;
+    background: $color1;
 
-    &:nth-of-type(even){
-        background: $color2;
-    }
-    &:nth-of-type(odd){
-        background: $color2;
-    }
+    // &:nth-of-type(even){
+    //     background: $color2;
+    // }
+    // &:nth-of-type(odd){
+    //     background: $color2;
+    // }
+    // &:first-of-type{
+    //     background-color: $color2;
+    //     display: block;
+    // }
+
     &:first-of-type{
         background-color: $color2;
+        color: $color1;
         display: block;
     }
 

@@ -1,18 +1,17 @@
-#sec_contact{
-    text-align: center;
+#contact_parts {
+    padding: 1% 0 1% 0;
+    position: absolute;  // this is how I managed to put stuff on top of the particles
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
-
-#contact_parts {
-    position: absolute;
-}
-
 
 #headshot{
-    max-width: 25%;
-    max-height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 18%;
+    width: 18%;
 }
 
 #kurzgesagt {
@@ -21,7 +20,7 @@
     font-size: larger;
     margin: 0 auto; /* center element horizontally */
     text-align: center;
-    width: 30%;
+    width: 40%;
     overflow: hidden;
     padding: 1em;
 }
@@ -30,22 +29,23 @@
     display: flex;
     justify-content: center;
     padding: 1em;
+
+    //TODO: animation not working really well
+    transform-origin: 50% 50%;
+    transition: transform .2s;
 }
 
 #social_bar div {
-    max-width: 70px; 
+    max-width: 70px;
     flex: 1;
 }
 
+// #social_bar div :hover{
+//     transform: scale(1.2); //TODO: not working smoothly. Commenting out.
+// }
+
 .social_icon {
-    transition: transform .2s; /* Animation */
     fill: $color1;
-    //display: inline-block;
-    width: 80%;
+    width: 60%;
     height: auto;
-}
-
-
-.social-icon :hover {
-    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
