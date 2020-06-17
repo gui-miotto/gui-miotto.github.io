@@ -1,0 +1,41 @@
+- type: Education
+  position: Electrical Engineering Bsc.
+  company: University of Uberlândia
+  start: 2004-03-01
+  end: 2009-07-01
+  icon: UFU.png
+
+- type: Academic job
+  position: Biomedical Engineering HiWi
+  company: University of Uberlândia
+  start: 2007-03-01
+  end: 2008-12-01
+  icon: biolab.png
+
+- type: Industry job
+  position: Automation Engineer
+  company: Chemtech-Siemens
+  start: 2008-07-01
+  end: 2010-08-01
+  icon: siemens.png
+
+- type: Industry job
+  position: Petroleum Engineer
+  company: Petrobras
+  start: 2010-09-01
+  end: 2018-03-01
+  icon: petrobras.jpg
+
+- type: Education
+  position: Computer Science Bsc.
+  company: University of Freiburg
+  start: 2018-04-01
+  end: now  # This is a special Liquid keywork
+  icon: unifreiburg.png
+
+- type: Academic job
+  position: Machine Learning HiWi
+  company: University of Freiburg
+  start: 2019-06-01
+  end: 2020-04-01
+  icon: automl.jpg

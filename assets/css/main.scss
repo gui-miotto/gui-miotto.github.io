@@ -6,6 +6,54 @@
 @import "navbar";
 @import "section_deck";
 @import "sec_contact";
+
+
+
+.bar {
+    position: absolute;
+    height: 40px;
+    &:hover{ 
+        transform: scale(1.05, 1.2); 
+    }
+    
+    {% assign days2px = 0.1 %}
+    {% assign day_zero = site.data.experience[0].start | date: '%s' %}
+    {% assign counter = 1 %}
+    {% for exp in site.data.experience %}
+        &:nth-of-type({{ counter }}){
+            // Length
+            {% assign start = exp.start | date: '%s' %}
+            {% assign end = exp.end | date: '%s' %}
+            {% assign days = end | minus: start | divided_by: 86400 %}
+            width: {{ days | times: days2px }}px;
+
+            // Horirontal coordinate
+            left: {{ start | minus: day_zero | divided_by: 86400 | times: days2px }}px;
+
+            // Vertical coordinate
+            top: {{ counter | times: 50 }}px;
+
+            // Color
+            {% if exp.type == "Industry job" %}
+                background-color: $color4;
+            {% elsif exp.type == "Education" %}
+                background-color: $color3;
+            {% elsif exp.type == "Academic job" %}
+                background-color: $color2;
+            {% else %}
+                background-color: black; //This would mean an error
+            {% endif %}
+        }
+        {% assign counter = counter | plus: 1 %}
+    {% endfor %}
+}
+
+
+
+
+
+
+
 @import "sec_experience";
 //@use "footer";
 
