@@ -1,21 +1,22 @@
 <h3>Experience</h3>
 
 <div id="exp_graph">
+{% assign counter = 1 %}
 {% for exp in site.data.experience %}
-    {{exp.position}}
-
-    
-
-    <div class="bar"></div>
-
-
-
-    {{ secondsSince }}
-
+    <a href="googe.com">
+        <div class="exp_item">
+            <div class="exp_logo">
+                <img class="exp_img" src="assets/img/logo/{{ exp.icon }}" alt="{{ exp.company }}">
+            </div>
+            <div class="exp_desc">
+                {{ exp.position }} <br/> at {{ exp.company}}
+            </div>
+            <div class="exp_bar_container">
+                <div class="exp_bar" id="exp_bar_{{ counter }}"> <!-- Size, position and color controlled by css --> </div>
+            </div>
+        </div>
+    </a>
+    {% assign counter = counter | plus: 1 %}
 {% endfor %}
-
-
-    <!-- <div id="rectangle"></div>
-    <div id="another"></div> -->
 </div>
 

@@ -11,8 +11,8 @@
 #headshot{
     height: 40vh;
     max-height: 40em;
-} 
- 
+}
+
 #kurzgesagt {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
@@ -28,21 +28,13 @@
 #social_bar {
     display: flex;
     justify-content: center;
-    padding: 1em;
-
-    //TODO: animation not working really well
-    transform-origin: 50% 50%;
-    transition: transform .2s;
+    padding-top: .5em;
 }
 
 #social_bar div {
     max-width: 70px;
-    flex: 1;
+    @include expand_on_hover(.2s, 1.2)
 }
-
-// #social_bar div :hover{
-//     transform: scale(1.2); //TODO: not working smoothly. Commenting out.
-// }
 
 .social_icon {
     fill: $color1;
