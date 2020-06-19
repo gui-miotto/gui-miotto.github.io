@@ -3,39 +3,46 @@
   company: University of Uberlândia
   start: 2004-03-01
   end: 2009-07-01
-  icon: UFU.png
+  icon: UFU_vert.png
 
 - type: Academic job
   position: Biomedical Engineering HiWi
-  company: University of Uberlândia
+  company: BioLab - UFU
   start: 2007-03-01
   end: 2008-12-01
-  icon: biolab.png
+  icon: biolab_vert.png
 
 - type: Industry job
   position: Automation Engineer
   company: Chemtech-Siemens
   start: 2008-07-01
   end: 2010-08-01
-  icon: siemens.png
+  icon: siemens_vert.png
 
 - type: Industry job
   position: Petroleum Engineer
   company: Petrobras
   start: 2010-09-01
   end: 2018-03-01
-  icon: petrobras.jpg
+  icon: petrobras_vert.png
 
 - type: Education
-  position: Computer Science Bsc.
+  position: Computer Science Msc.
   company: University of Freiburg
   start: 2018-04-01
-  end: now  # This is a special Liquid keywork
-  icon: unifreiburg.png
+  end: now  # "now" is a special Liquid keywork
+  icon: unifreiburg_vert.png
 
 - type: Academic job
   position: Machine Learning HiWi
-  company: University of Freiburg
+  company: AutoML.org
   start: 2019-06-01
   end: 2020-04-01
-  icon: automl.jpg
+  icon: automl_vert.png
+
+- type: Academic job
+  position: Deep Learning HiWi
+  company: Hanh-Schickard Geselschaft
+  start: 2020-02-01
+  end: now
+  icon: hahnschickard_vert.png

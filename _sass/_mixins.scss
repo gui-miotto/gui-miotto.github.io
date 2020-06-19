@@ -6,6 +6,12 @@
     transform: translate(-50%, -50%);
 }
 
+@mixin center_horizontal {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @mixin expand_on_hover($time, $scale_x, $scale_y: same) {
     transition: transform $time;
     transform-origin: 50% 50%;

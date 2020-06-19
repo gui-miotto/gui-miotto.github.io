@@ -4,14 +4,16 @@
 @import "colors";
 @import "global";
 @import "navbar";
-@import "section_deck";
 @import "sec_contact";
 
 @import "sec_experience";
 // The code that follows should be actually inside _sec_experience.scss
 // however, jekyll doesn't make liquid processing inside scss partials. Very sad!
+{% assign left_pad = 15 %}
 {% assign days2px = 0.1 %}
-{% assign day_zero = site.data.experience[0].start | date: '%s' %}
+{% assign first_year = site.data.experience.first.start | date: '%Y' %}
+{% assign day_zero = first_year | append: "-01-01" | date: '%s' %}
+
 {% assign counter = 1 %}
 {% for exp in site.data.experience %}
 #exp_bar_{{ counter }}{
@@ -22,7 +24,7 @@
     width: {{ days | times: days2px }}px;
 
     // Horirontal coordinate
-    left: {{ start | minus: day_zero | divided_by: 86400 | times: days2px }}px;
+    left: {{ start | minus: day_zero | divided_by: 86400 | times: days2px | plus: left_pad }}px;
 
     // Color
     {% if exp.type == "Industry job" %}
