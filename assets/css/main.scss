@@ -14,9 +14,8 @@
 {% assign first_year = site.data.experience.first.start | date: '%Y' %}
 {% assign day_zero = first_year | append: "-01-01" | date: '%s' %}
 
-{% assign counter = 1 %}
 {% for exp in site.data.experience %}
-#exp_bar_{{ counter }}{
+#exp_bar_{{ forloop.index }}{
     // Length
     {% assign start = exp.start | date: '%s' %}
     {% assign end = exp.end | date: '%s' %}
@@ -36,10 +35,28 @@
     {% else %}
         background-color: black; //This would mean an error
     {% endif %}
-
-    {% assign counter = counter | plus: 1 %}
 }
 {% endfor %}
+
+{% assign start = site.data.experience.first.start | date: '%Y' %}
+{% assign end = site.data.experience.last.end | date: '%Y' %}
+{% for year in (start..end) %}
+    {% assign year_start = year | append: "-01-01" | date: '%s' %}
+
+    #label_{{ year }} {
+        left: {{ year_start | minus: day_zero | divided_by: 86400 | times: days2px | plus: left_pad }}px;
+    }
+
+    #tick_{{ year }} {
+        left: {{ year_start | minus: day_zero | divided_by: 86400 | times: days2px | plus: left_pad }}px;
+        width: 2px;
+        background-color: #ccc;
+        //height: {{ site.data.experience.size }}00%;
+        height: calc(({{ site.data.experience.size }} + 1) * (2.5em + 4px));  //TODO: this is not really correct. Get it right. Remove these hardcoded values. The way above seems promissing.
+        bottom: 2.5em;
+    }
+{% endfor %}
+
 
 
 //@use "footer";

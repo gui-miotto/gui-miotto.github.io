@@ -1,6 +1,24 @@
 <h3>Experience</h3>
 
 <div id="exp_graph">
+
+    <!-- Legend -->
+    <div id="legend">
+        <div>
+            <div> <div class="legend_box" id="legend_education"></div> </div> 
+            <div> Education </div>
+        </div>
+        <div>
+            <div> <div class="legend_box" id="legend_academicjob"></div> </div> 
+            <div> Academic job </div>
+        </div>
+        <div>
+            <div> <div class="legend_box" id="legend_industryjob"></div> </div> 
+            <div> Industry job </div>
+        </div>
+    </div>
+
+<!-- Experience entries -->
 {% for exp in site.data.experience %}
     <a href="googe.com">
         <div class="exp_item">
@@ -20,6 +38,7 @@
 {% endfor %}
 
 
+<!-- Year axis and ticks -->
 {% assign start = site.data.experience.first.start | date: '%Y' %}
 {% assign end = site.data.experience.last.end | date: '%Y' %}
 <div class="exp_item" id="timeline">
@@ -29,8 +48,10 @@
         {% for year in (start..end) %}
             {% assign mod = year | modulo: 2 %}
             {% if mod == 0 %}
-            <div class="year_tick">
+            <div class="year_label" id="label_{{ year }}">
                 {{year}}
+            </div>
+            <div class="year_tick" id="tick_{{ year }}">
             </div>
             {% endif %}
         {% endfor %}

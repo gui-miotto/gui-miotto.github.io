@@ -38,11 +38,12 @@
 
 #social_bar div {
     max-width: 70px;
-    @include expand_on_hover(.2s, 1.2)
+    @include expand_on_hover(.2s, 1.2);
 }
 
 .social_icon {
     fill: $color1;
     width: 60%;
     height: auto;
+    @include center_horizontal;
 }
