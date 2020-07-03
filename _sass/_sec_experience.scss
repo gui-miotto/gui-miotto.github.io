@@ -11,6 +11,7 @@
     @include expand_on_hover(.3s, 1.03, 1.15);
     &:hover{
         border: 1px solid $color2;
+        cursor: pointer;
     }
 }
 
@@ -44,8 +45,10 @@
     height: 100%;
 }
 
-#timeline:hover {
+#timeline:hover {  // undo some of the stuff we setup class-wide
     transform: none;
+    border: none;
+    cursor: default;
 }
 
 #years_container {
@@ -96,4 +99,17 @@
 
 #legend_industryjob {
     background-color: $color4;
+}
+
+.exp_popup {
+    position: absolute;
+    display: none;
+    @include center_vertical;
+    width: 40em;
+    background-color: $color1;
+    padding: 1em;
+
+    border: 1px solid $color2;
+    
+    
 }

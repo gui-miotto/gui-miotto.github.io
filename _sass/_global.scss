@@ -12,6 +12,7 @@ html {
 $navbar_height: 3em;
 
 section {
+    position: relative;
     padding-top: $navbar_height;
     height: calc(100vh - #{$navbar_height});
     //width: 100vw;  //This would generate a horizonzal scroll bar
