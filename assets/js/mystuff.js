@@ -3,7 +3,7 @@ function show_exp_popup(elmnt) {
     blur_exp_graph(true);
 
     var popup = document.getElementById(elmnt);
-    popup.style.display = "block";
+    popup.style.display = "flex";
 }
 
 function reset_exp_graph(){

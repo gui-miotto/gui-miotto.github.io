@@ -5,15 +5,15 @@
     <!-- Legend -->
     <div id="legend">
         <div>
-            <div> <div class="legend_box" id="legend_education"></div> </div> 
+            <div> <div class="legend_box" id="legend_education"></div> </div>
             <div> Education </div>
         </div>
         <div>
-            <div> <div class="legend_box" id="legend_academicjob"></div> </div> 
+            <div> <div class="legend_box" id="legend_academicjob"></div> </div>
             <div> Academic job </div>
         </div>
         <div>
-            <div> <div class="legend_box" id="legend_industryjob"></div> </div> 
+            <div> <div class="legend_box" id="legend_industryjob"></div> </div>
             <div> Industry job </div>
         </div>
     </div>
@@ -22,7 +22,7 @@
 {% for exp in site.data.experience %}
     <div class="exp_item" onclick="show_exp_popup('exp_popup_{{ forloop.index }}')">
         <div class="exp_logo">
-            <img class="exp_img" src="assets/img/logo/{{ exp.icon }}" alt="{{ exp.company }}">
+            <img class="exp_img" src="assets/img/logo/{{ exp.icon1 }}" alt="{{ exp.company }}">
         </div>
         <div class="exp_desc">
             {{ exp.position }} <br/> at {{ exp.company}}
@@ -60,13 +60,27 @@
 
 
 {% for exp in site.data.experience %}
+{% assign start = exp.start | date: '%b %Y' %}
+{% assign end = exp.end | date: '%b %Y' %}
 <div class="exp_popup" id="exp_popup_{{ forloop.index }}">
-    <p>{{ exp.position }}.</p>
-    <img onclick="reset_exp_graph()" src="/assets/img/icon/close.png" width="48" height="48">
-
-    <!-- <svg viewBox="0 0 48 48">
-        <use xlink:href="/assets/img/icon/close.svg#svg2"></use>
-    </svg> -->
+    <div class="exp_popup_header">
+        <div class="exp_popup_logo">
+            <a href="{{ exp.link }}" target="_blank">
+                <img class="exp_img" src="assets/img/logo/{{ exp.icon2 }}" alt="{{ exp.company }}">
+            </a>
+        </div>
+        <div class="exp_popup_title">
+            <h3> {{ exp.position }} </h3>
+            {{ exp.company}} <br/>
+            <p> From {{ start }} to {{ end }} </p>
+        </div>
+        <div class="exp_popup_close">
+            <img onclick="reset_exp_graph()" src="/assets/img/icon/close.png" width="48" height="48">
+        </div>
+    </div>
+    <div class="exp_popup_descr">
+        <p>{{ exp.description }}</p>
+    </div>
 </div>
 {% endfor %}
 
