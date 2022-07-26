@@ -1,5 +1,3 @@
-![Uni Jekyll Theme](/assets/img/share.jpg)
-
 # Uni – A one-page Jekyll theme
 
 [View Half Demo](http://brianmaierjr.com/uni/) | [View Full Demo](http://brianmaierjr.com/uni/full) | [View Card Demo](http://brianmaierjr.com/uni/card)
@@ -53,15 +51,11 @@ The main settings can be found inside the `_config.yml` file:
 
 ---
 
-![Uni Jekyll Theme](layout--half.jpg)
-
 ## Half Layout
 
 * **half_side:** which side of the page your content is on [left or right]
 
 ---
-
-![Uni Jekyll Theme](layout--full.jpg)
 
 ## Full layout
 
@@ -69,7 +63,6 @@ The main settings can be found inside the `_config.yml` file:
 
 ---
 
-![Uni Jekyll Theme](layout--card.jpg)
 
 ## Card layout
 

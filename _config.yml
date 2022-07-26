@@ -1,29 +1,29 @@
 # Your Name or Company
-title: Uni Kravitz
+title: Guilherme Miotto
 
 # Description of your website. This is used for social sharing.
-description:  The beautiful website of artist, poet, craftsperson, cyclist, and avid juggler, Uni Kravitz.
+description:  My mini personal webpage.
 
 # A brief blurb about yourself
-content: Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum.
+# content: I moved this to an include file (content.md)
 
 # Add your social links
 social:
-  - platform: github
-    url: https://github.com/brianmaierjr
-  - platform: facebook
-    url: https://facebook.com/brianmaierjr
-  - platform: twitter
-    url: https://twitter.com/brianmaierjr
   - platform: linkedin
-    url: brianmaierjr
+    url: https://www.linkedin.com/in/gui-miotto/
+  - platform: github
+    url: https://github.com/gui-miotto
+  - platform: twitter
+    url: https://twitter.com/gmiotto
+  - platform: CV papers
+    url: https://gui-miotto.github.io/weekly_cv_takeaway/
 
 # General settings
-# url: http://brianmaierjr.github.com/uni
-# baseurl: "/uni" 
+url: https://gui-miotto.github.io/
+baseurl: ""
 markdown: kramdown
 sharing_image: share.jpg
-google_analytics: "UA-58263416-1" # google analytics tracking
+#google_analytics: "UA-58263416-1" # google analytics tracking  #TODO: see what this is
 
 #### LAYOUT OPTIONS #####
 
