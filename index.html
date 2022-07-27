@@ -6,4 +6,21 @@ title: Uni - A simple, one page Jekyll theme
   <h1 class="pageTitle">{{ site.title }}</h1>
   {% endif %}
 
-  <p class="pageContent">{% include content.md %}</p>
+  <div class="pageContent">
+    {% assign linkedin = site.data.social | where: "platform", "linkedin" | first %}
+    {% assign twitter = site.data.social | where: "platform", "twitter" | first %}
+    {% assign cvpapers = site.data.social | where: "platform", "cv papers" | first %}
+
+    <p>I am a computer vision engineer working with deep learning, classic image processing,
+        and optical imaging systems.</p>
+
+    <p>More details about my professional experience and academic background can be found on my
+        <a href="{{ linkedin.url }}" target="_blank">LinkedIn profile</a>.</p>
+
+    <p>I also have a <a href="{{ twitter.url }}" target="_blank">Twitter account</a>. We can connect there as well. But I am not a very active
+        user, I admit.</p>
+
+    <p>Recently, I started summarizing the main ideas of the papers I read. A little project
+        I'm calling "<a href="{{ cvpapers.url }}" target="_blank">The weekly computer vision takeaway</a>." Take a look if it is something that
+        interests you.</p>
+  </div>
