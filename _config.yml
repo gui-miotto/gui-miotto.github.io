@@ -7,16 +7,7 @@ description:  My mini personal webpage.
 # A brief blurb about yourself
 # content: I moved this to an include file (content.md)
 
-# Add your social links
-social:
-  - platform: linkedin
-    url: https://www.linkedin.com/in/gui-miotto/
-  - platform: github
-    url: https://github.com/gui-miotto
-  - platform: twitter
-    url: https://twitter.com/gmiotto
-  - platform: CV papers
-    url: https://gui-miotto.github.io/weekly_cv_takeaway/
+# I moved the social links to _data
 
 # General settings
 url: https://gui-miotto.github.io/
